@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_round"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:paddingTop="70dp">
+
+        <TextView
+            android:id="@+id/finalScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="FINAL SCORE: 0"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="Try again?"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round"
+                app:backgroundTint = "@color/yellow"
+                android:textColor="@color/black"
+                android:text="OK"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_round"
+                app:backgroundTint = "@color/yellow"
+                android:text="CLOSE"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/popupImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/wrong"/>
+</RelativeLayout>

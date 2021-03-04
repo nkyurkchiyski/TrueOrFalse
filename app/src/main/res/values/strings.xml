@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrueOrFalse</string>
+    <string name="title_activity_game">GameActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="pb">personal_best</string>
+    <string name="pb_popup">PB Popup</string>
+    <string name="correct_popup">Correct Popup</string>
+</resources>
